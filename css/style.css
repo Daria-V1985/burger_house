@@ -227,7 +227,6 @@ textarea.input {
 }
 
 .header__logo {
-  max-width: 100%;
   vertical-align: bottom;
 }
 
@@ -269,50 +268,6 @@ textarea.input {
   text-decoration: underline;
 }
 
-/*.icon-menu {
-  @media (max-width: $tablet) {
-    display: block;
-    position: relative;
-    width: 40px;
-    height: 22.5px;
-    cursor: pointer;
-    z-index: 10;
-    span,
-    &::before,
-    &::after {
-      content: "";
-      transition: all 0.3s ease 0s;
-      left: 0px;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-    }
-    &::before {
-      top: 0px;
-    }
-    &::after {
-      bottom: 0px;
-    }
-    span {
-      top: calc(50% - 1px);
-    }
-    .menu-open & {
-      span {
-        transform: scale(0);
-      }
-      &::before {
-        transform: rotate(-45deg);
-        top: calc(50% - 1px);
-      }
-      &::after {
-        transform: rotate(45deg);
-        bottom: calc(50% - 1px);
-      }
-    }
-  }
-}*/
-
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,7 +294,7 @@ textarea.input {
 }
 
 .main-content {
-  margin: 6.4375rem 0 11.25rem 0;
+  padding: 6.4375rem 0 11.25rem 0;
 }
 
 .main-content__container {
@@ -358,7 +313,6 @@ textarea.input {
 }
 
 .main-content__img {
-  max-width: 100%;
   position: absolute;
   top: -123px;
   left: calc(100% - 991px);
@@ -564,11 +518,34 @@ textarea.input {
   display: flex;
 }
 
+.order-content__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .order-content__img {
   position: absolute;
   top: 0;
-  right: calc(100% - 46.875rem);
   z-index: -1;
+}
+
+.content-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content-form__inner {
@@ -648,7 +625,7 @@ textarea.input {
           box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
 }
 
-.parallax-container {
+/*.parallax-container {
   width: 100%;
   height: 100%;
   top: 0;
@@ -659,39 +636,37 @@ textarea.input {
   position: absolute;
   top: 8rem;
   left: 0;
-  z-index: 3;
-}
-
-#scene1 .hot {
-  width: 292px;
-  height: 345px;
-  background: url("../img/peretz_1.svg") top/cover no-repeat;
+  z-index:3;
+  .hot {
+    width: 292px;
+    height: 345px;
+    background: url("../img/peretz_1.svg") top / cover no-repeat;
+  }
 }
 
 #scene2 {
   position: absolute;
   top: 34rem;
   right: -1%;
-  z-index: 3;
-}
-
-#scene2 .hot {
-  width: 230px;
-  height: 292px;
-  background: url("../img/peretz_2.svg") top/cover no-repeat;
+  z-index:3;
+  .hot {
+    width: 230px;
+    height: 292px;
+    background: url("../img/peretz_2.svg") top / cover no-repeat;
+  }
 }
 
 #scene3 {
   position: absolute;
   top: 223rem;
   right: -2.5%;
-}
-
-#scene3 .hot {
-  width: 765px;
-  height: 628px;
-  background: url("../img/peretz_3.svg") top/cover no-repeat;
-}
+  z-index:3;
+  .hot {
+    width: 765px;
+    height: 628px;
+    background: url("../img/peretz_3.svg") top / cover no-repeat;
+  }
+}*/
 
 .page {
   min-width: 0;
@@ -782,7 +757,7 @@ textarea.input {
   }
 
   .why-we {
-    margin-bottom: 11.25rem;
+    padding-bottom: 11.25rem;
   }
 
   .why-we__items {
@@ -803,6 +778,10 @@ textarea.input {
 
   .order {
     padding-bottom: 11.25rem;
+  }
+
+  .order-content__img {
+    right: 49.1875rem;
   }
 
   .content-form__inner {
@@ -872,7 +851,7 @@ textarea.input {
   }
 
   .why-we {
-    margin-bottom: 3.125rem;
+    padding-bottom: 3.125rem;
   }
 
   .why-we__items {
@@ -903,6 +882,10 @@ textarea.input {
     padding-bottom: 3.125rem;
   }
 
+  .order-content__img {
+    right: -2.5rem;
+  }
+
   .content-form__inner {
     width: 20.375rem;
   }
@@ -930,19 +913,6 @@ textarea.input {
     display: none;
   }
 
-  .nav-header__list {
-    display: block;
-    margin: 0px 0px 0px 1.25rem;
-  }
-
-  .nav-header__item {
-    margin: 1.5625rem 0px 0px 0px;
-  }
-
-  .nav-header__link {
-    font-size: 1.375rem;
-  }
-
   .main-content__img {
     opacity: 0.6;
   }
@@ -965,17 +935,8 @@ textarea.input {
     display: none;
   }
 
-  .content-form__inner {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .parallax-container {
-    display: none;
+  .content-form {
+    display: block;
   }
 }
 
@@ -989,11 +950,11 @@ textarea.input {
   }
 
   .main-content {
-    margin-top: 3.75rem;
+    padding-top: 3.75rem;
   }
 
   .main-content {
-    margin-bottom: 9.375rem;
+    padding-bottom: 9.375rem;
   }
 
   .product__card-img {
@@ -1001,7 +962,7 @@ textarea.input {
   }
 
   .content-form__inner {
-    margin-left: -0.1875rem;
+    margin-left: -0.125rem;
   }
 }
 
@@ -1049,11 +1010,11 @@ textarea.input {
   }
 
   .main-content {
-    margin-top: 6.4375rem;
+    padding-top: 6.4375rem;
   }
 
   .main-content {
-    margin-bottom: 11.25rem;
+    padding-bottom: 11.25rem;
   }
 
   .content-form__inner {
@@ -1067,15 +1028,15 @@ textarea.input {
   }
 
   .main-content {
-    margin-top: calc(3.75rem + 2.6875 * (((100vw - 20rem)) / ((100))));
+    padding-top: calc(3.75rem + 2.6875 * (((100vw - 20rem)) / ((100))));
   }
 
   .main-content {
-    margin-bottom: calc(9.375rem + 1.875 * (((100vw - 20rem)) / ((100))));
+    padding-bottom: calc(9.375rem + 1.875 * (((100vw - 20rem)) / ((100))));
   }
 
   .content-form__inner {
-    margin-left: calc(-0.1875rem + 43.125 * (((100vw - 20rem)) / ((100))));
+    margin-left: calc(-0.125rem + 43.0625 * (((100vw - 20rem)) / ((100))));
   }
 }
 
@@ -1125,7 +1086,7 @@ textarea.input {
   }
 
   .why-we {
-    margin-bottom: calc(3.125rem + 8.125 * (((100vw - 20rem)) / ((100))));
+    padding-bottom: calc(3.125rem + 8.125 * (((100vw - 20rem)) / ((100))));
   }
 
   .why-we__items {
@@ -1146,6 +1107,10 @@ textarea.input {
 
   .order {
     padding-bottom: calc(3.125rem + 8.125 * (((100vw - 20rem)) / ((100))));
+  }
+
+  .order-content__img {
+    right: calc(-2.5rem + 51.6875 * (((100vw - 20rem)) / ((100))));
   }
 
   .content-form__inner {
