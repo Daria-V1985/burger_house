@@ -625,48 +625,49 @@ textarea.input {
           box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
 }
 
-/*.parallax-container {
+.parallax-container {
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  z-index: 3;
+  pointer-events: none;
 }
 
 #scene1 {
   position: absolute;
   top: 8rem;
   left: 0;
-  z-index:3;
-  .hot {
-    width: 292px;
-    height: 345px;
-    background: url("../img/peretz_1.svg") top / cover no-repeat;
-  }
+}
+
+#scene1 .hot {
+  width: 292px;
+  height: 345px;
+  background: url("../img/peretz_1.svg") top/cover no-repeat;
 }
 
 #scene2 {
   position: absolute;
   top: 34rem;
   right: -1%;
-  z-index:3;
-  .hot {
-    width: 230px;
-    height: 292px;
-    background: url("../img/peretz_2.svg") top / cover no-repeat;
-  }
+}
+
+#scene2 .hot {
+  width: 230px;
+  height: 292px;
+  background: url("../img/peretz_2.svg") top/cover no-repeat;
 }
 
 #scene3 {
   position: absolute;
   top: 223rem;
   right: -2.5%;
-  z-index:3;
-  .hot {
-    width: 765px;
-    height: 628px;
-    background: url("../img/peretz_3.svg") top / cover no-repeat;
-  }
-}*/
+}
+
+#scene3 .hot {
+  width: 765px;
+  height: 628px;
+  background: url("../img/peretz_3.svg") top/cover no-repeat;
+}
 
 .page {
   min-width: 0;
